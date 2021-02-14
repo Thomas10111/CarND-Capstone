@@ -28,9 +28,9 @@ class TLClassifier(object):
         self.chatter_classifier.publish(str(height) + "  " + str(width) + "  " + str(ch) + " " + str(sum(sum(r==r.max()))))
         #TODO implement light color prediction
         # return TrafficLight.UNKNOWN
-        if sum(sum(r == 255)) > 50: # number of red pixels greaaaaaaaaater than some threshold
-            return TrafficLight.RED
-        else:
-            return TrafficLight.GREEN
+        # if sum(sum(r == 255)) > 50: # number of red pixels greaaaaaaaaater than some threshold
+        #     return TrafficLight.RED
+        # else:
+        #     return TrafficLight.GREEN
 
-        #return light.state
+        return light.state

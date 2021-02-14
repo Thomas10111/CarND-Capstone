@@ -51,7 +51,7 @@ class WaypointUpdater(object):
         self.loop()
 
     def loop(self):
-        rate = rospy.Rate(50)
+        rate = rospy.Rate(40)
         while not rospy.is_shutdown():
             self.pub.publish("running")
             if self.pose and self.base_lane and self.waypoint_tree:  # why is checking self.waypoint_tree neccessary?
