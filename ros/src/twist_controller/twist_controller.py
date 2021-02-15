@@ -19,7 +19,8 @@ class Controller(object):
                                      max_lat_accel,
                                      max_steer_angle):
 
-        kp = 0.3
+        #kp = 0.3
+        kp = 0.4
         ki = 0.1
         kd = 0
         min_throttle = 0
